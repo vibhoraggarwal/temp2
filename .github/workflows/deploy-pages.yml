@@ -34,6 +34,9 @@ jobs:
         run: |
           mkdir -p _site
           cp -r source-repo/results/html/* _site/
+          ls -la _site/
+          echo "Copied files structure:"
+          find _site/ -type f | head -20
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
