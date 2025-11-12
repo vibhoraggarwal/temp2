@@ -28,6 +28,7 @@ jobs:
           repository: vibhoraggarwal/indoor-lidar-odometry
           ref: main
           path: source-repo
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
       - name: Copy HTML files
         run: |
